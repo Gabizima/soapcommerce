@@ -1,0 +1,11 @@
+/* Stylisation de la barre d'annonce pour la livraison gratuite */
+.free-delivery-bar {
+    background-color: #101010; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centrage du texte */
+    padding: 10px 0; /* Ajout d'un peu d'espace au-dessus et en dessous du texte */
+    font-size: 1em; /* Taille du texte */
+    width: 100%; /* Assure que la barre prend toute la largeur */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Ajoute une légère ombre pour un effet de profondeur */
+  }
+  
