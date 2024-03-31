@@ -1,5 +1,6 @@
 
 import { FaSearch, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 import "./navbar.css";
 // Définition du composant fonctionnel Navbar
 function Navbar() {
@@ -23,7 +24,7 @@ function Navbar() {
           {/* // Liens de navigation alignés à droite pour le compte utilisateur, les favoris et le panier */}
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/account"><FaUser /> Mon compte</a>
+              <a className="nav-link" href="/authentification/connexion"><FaUser /> Mon compte</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/favorites"><FaHeart /> Mes favoris</a>

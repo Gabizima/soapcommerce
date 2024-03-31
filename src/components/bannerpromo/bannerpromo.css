@@ -1,0 +1,8 @@
+/* Styles spécifiques pour les images du carrousel */
+.carousel-item img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Ajoute un dégradé pour améliorer la lisibilité du texte */
+    height: 60vh; /* Définissez la hauteur souhaitée ici */
+    object-fit: cover;
+    width: 100% !important; /* Force la largeur à être de 100% */
+  }
+  

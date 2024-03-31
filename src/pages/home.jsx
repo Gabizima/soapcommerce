@@ -1,28 +1,33 @@
 import Navbar from "../components/navbar/navbar.jsx";
 import FreeDelivery from "../components/freedelivery/freedelivery.jsx";
+import Bannerpromo from "../components/bannerpromo/bannerpromo.jsx";
+import ProductCard from "../components/productcard/productcard.jsx";
 import Newsletter from "../components/newsletter/newsletter.jsx";
+import Footer from "../components/footer/footer.jsx";
 
-function home() {
+function Home() {
   return (
     <>
       <FreeDelivery />
       <Navbar />
-      <Newsletter />
-      <div className="Special" style={{ margin: "6em" }}>
-        <h2 style={{ marginBottom: "2em" }}>Offre spéciales</h2>
-        <div style={{ display: "flex" }}>
-          <img src="/other/special.webp" alt="speical-offer" />
-          <p style={{ marginLeft: "2em" }}>
-            Découvrez l'excellence de notre Savon de Marseille, spécialement
-            conçu pour prendre soin de votre peau sensible. Formulé à partir
-            d'ingrédients naturels et respectueux de l'environnement, notre
-            savon est le choix idéal pour ceux qui recherchent une solution
-            douce mais efficace pour leur routine de nettoyage quotidienne.
-          </p>
+      <Bannerpromo /> 
+
+      <div className="container" style={{marginTop: " 100px", marginBottom: "200px"}}>
+        <h2 className="mb-4" style={{textAlign: "center"}}>Nos meilleurs ventes</h2>
+
+        <div className="container" style={{marginTop: "100px"}}>
+        <div className="row">
+        <ProductCard filterCategory="1" />
         </div>
+        </div>
+
+
+
       </div>
+      <Newsletter />
+      <Footer />
     </>
   );
 }
 
-export default home;
+export default Home;

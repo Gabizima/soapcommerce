@@ -1,0 +1,53 @@
+/* Personnalisation supplémentaire en dehors des styles Bootstrap pour une touche unique */
+.product-card {
+    width: 350px; /* Ajustez si nécessaire */
+    margin: auto; /* Centre la carte dans la colonne si max-width < 100% de la colonne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombrage plus prononcé au survol */
+  }
+  
+  .product-card img {
+    object-fit: cover;
+    height: 250px; /* Hauteur fixe pour uniformiser l'aspect des images */
+  }
+  
+  .product-card .card-body,
+  .product-card .card-footer {
+    text-align: center; /* Centre le texte dans le corps et le pied de la carte */
+  }
+  
+  .card .btn-outline-dark {
+    background-color: #EEF1BD;
+    color: #333;
+    border: 2px solid transparent; /* Bordure transparente qui sera colorée au survol */
+    padding: 0.75rem 1.25rem; /* Augmentation du padding pour un bouton plus grand */
+    font-weight: bold; /* Rend le texte du bouton plus épais */
+    letter-spacing: 0.05rem; /* Espacement légèrement plus grand entre les lettres */
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease; /* Ajoute une transition pour la transformation */
+  }
+  
+  .card .btn-outline-dark:hover {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #EEF1BD; /* La bordure prend la couleur du fond initial du bouton au survol */
+    
+  }
+  
+  /* Augmentation du padding à l'intérieur de la carte pour plus d'espace */
+  .product-card .card-body {
+    padding: 2rem; /* Ajustez selon l'espace désiré */
+  }
+  
+  /* Ajustement du padding et de l'espacement pour le pied de carte */
+  .product-card .card-footer {
+    padding: 1.5rem;
+    background-color: #f8f9fa; /* Assurez-vous que cette couleur s'harmonise avec le design de votre site */
+    border-top: 1px solid #ececec; /* Ajoute une ligne subtile pour séparer le pied du corps de la carte */
+  }
+  

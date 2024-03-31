@@ -1,8 +1,54 @@
-/* Styles spécifiques pour les images du carrousel */
-.carousel-item img {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Ajoute un dégradé pour améliorer la lisibilité du texte */
-    height: 500px; /* Définissez la hauteur souhaitée ici */
-    object-fit: cover; /* Garantit que l'image couvre l'espace disponible sans se déformer */
-    width: 100% !important; /* Force la largeur à être de 100% */
+/* Styliser le composant s'inscrire à la newsletter */
+.newsletter {
+    background-color: #BBD686; /* Nouvelle couleur de fond */
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .newsletter h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter .form-control {
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .newsletter .btn {
+    background-color: #EEF1BD; /* Nouvelle couleur pour le bouton */
+    color: #333; /* Couleur du texte du bouton */
+    border-radius: 0 20px 20px 0;
+    border: none; /* Enlever la bordure du bouton */
+  }
+  
+  .newsletter .btn:hover {
+    background-color: #DCE4A7; /* Couleur du bouton au survol */
+  }
+  
+  .newsletter .input-group {
+    max-width: 600px; /* Ajuster selon la largeur souhaitée */
+    margin: auto;
+  }
+  
+  .newsletter .input-group-append {
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .newsletter .form-control:focus {
+    box-shadow: none; /* Enlever l'ombre au focus */
+    border-color: #ccc;
+  }
+  
+  /* Ajustement pour que le formulaire prenne toute la largeur sur les petits écrans */
+  @media (max-width: 768px) {
+    .newsletter .input-group {
+      width: 90%;
+    }
   }
   

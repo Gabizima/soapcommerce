@@ -1,37 +1,27 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import './Newsletter.css'; // Importez votre fichier CSS ici
+import './newsletter.css';
 
 function Newsletter() {
   return (
-    <Carousel>
-      {/* Slide 1 */}
-      <Carousel.Item>
-        <img
-          className="d-block"
-          src="/newlsetter/image1.jpg"
-          alt="Première slide"
-        />
-      </Carousel.Item>
-
-      {/* Slide 2 */}
-      <Carousel.Item>
-        <img
-          className="d-block"
-          src="/newlsetter/image2.jpg"
-          alt="Deuxième slide"
-        />
-      </Carousel.Item>
-
-      {/* Slide 3 */}
-      <Carousel.Item>
-        <img
-          className="d-block"
-          src="/newlsetter/image3.jpg"
-          alt="Troisième slide"
-        />
-      </Carousel.Item>
-    </Carousel>
+    <div className="newsletter py-5">
+        <div className="text-center">
+            <h2 className="mb-4">Inscrivez-vous à notre newsletter</h2>
+            <p>Recevez des offres exclusives et des conseils de soins de la peau directement dans votre boîte de réception.</p>
+            <form className="newsletter-form mt-4 d-flex justify-content-center">
+                <div className="input-group mb-3 w-50">
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Entrez votre adresse e-mail"
+                      aria-label="Adresse e-mail"
+                    />
+                    <div className="input-group-append">
+                        <button className="btn" type="submit">S'inscrire</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
   );
 }
 
